@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <input type="text" id="task-input" placeholder="請輸入任務">
+    <button onclick="addTask()">新增</button>
+    <button onclick="clearTasks()">清空全部</button>
+    <ul id="task-list"></ul>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
